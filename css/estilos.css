@@ -1,0 +1,368 @@
+* {
+    margin: 15px;
+    padding: 0%;
+ 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-color: beige;
+    border-radius: 50px;
+    
+    margin: 0px;
+}
+
+.col-3{
+    width: 25%;
+}
+.col-9{
+    width: 75%;
+}
+
+
+header {
+    display: grid;
+    
+    
+    background: url(/imagenes/fondoheader.png);
+    width: 100%;
+    font-size: 25px;
+    padding: 0.5em;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+}
+
+
+
+header ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+
+header ul li {
+    display: inline-block;
+    border-color: beige;
+    border-radius: 50px;
+    
+
+}
+
+header ul li a {
+
+    border: solid;
+    padding: 0.3em;
+    border-color: white;
+    border-radius: 50px;
+    
+
+}
+
+
+
+
+.parte-media {
+
+    display: grid;
+    grid-template-columns: 0.2fr 1.2fr;
+    color: white;
+    margin: 5%;
+    padding: 1%;
+}
+
+
+
+p {
+    color: white;
+    line-height: 1.5em;
+    text-align: left;
+   
+}
+
+
+
+
+.agenda {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+}
+
+subtitle {
+
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+
+}
+
+
+
+ul {
+    color: white;
+    text-align: center;
+}
+
+
+ul li {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    color: white;
+    text-align: center;
+
+
+}
+
+/* fin de index/inicio de librografia */
+
+.tbody {
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    padding: 10
+}
+
+.titulo-librografia {
+
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.container2 {
+    text-align: center;
+}
+
+/* fin de librografia/inicio Mi Historia */
+
+
+.historia {
+
+    color:white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+/* //////////// */
+
+
+.flex-container {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    width: 0%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.flex-container-flex-item {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.flex-item img {
+    width: 224px;
+    height: 224px;
+}
+
+/* desktop */
+@media (min-width: 550px){
+    header{
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 100px;
+    }
+    header nav {
+        text-align: center;
+        display: flex;
+        padding: 0.2;
+        text-decoration: none;
+        align-items: center;
+    
+      
+    }
+    
+    .container{
+        width:100%;
+        display: flex;
+        
+    }
+    .display-mobile{
+        display:none;
+    }
+    
+}
+
+/* //////////premios */
+
+
+.titulopremios {
+
+    justify-content: center;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+
+/* //////////// */
+
+
+.textarea {
+    padding: 20;
+    margin: 35px;
+}
+
+
+
+.titlebox {
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comentarios {
+    justify-content: center;
+    color: white;
+    text-align: center;
+    display: flex;
+
+}
+
+.subtitle-box {
+
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+
+.comentarios textarea {
+
+    width: 583px;
+    height: 162px;
+
+}
+
+.enviar {
+    justify-content: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    size: 10px 15px;
+
+}
+
+/* responsive */
+
+@media (max-width: 500px){
+    .container{
+        flex-wrap:wrap ;   
+    }
+    header{
+        gap:0px;
+    }
+    .a {
+        height: auto; 
+        display: grid;
+        grid-template-columns: auto;
+    }
+    /* para el header */
+    .display-mobile{
+        display:block;
+    }
+    .display-desktop{
+        display:none;
+    }
+
+  
+   
+
+    .header ul {
+        height: auto; 
+        display: flex;
+        justify-content: end;
+    }
+
+    .header ul li {
+
+        height: auto; 
+        display: grid;
+        grid-row: auto;
+
+    }
+    header ul li a { 
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: end;
+        text-align: end;
+    }
+   
+    .h1 {
+
+        height: auto; 
+        display: flex;
+    }
+   
+
+    .parte-media {
+        height: auto; 
+        display: flex;
+        text-align: end;
+        justify-content: end;
+
+    }
+    .imagen {
+      justify-content: ends;
+
+    }
+    .parrafo {
+        justify-content: end;
+        text-align: end;
+      
+    }
+
+    
+    .footer{
+        display:none;
+
+    }
+
+    .col-3{
+        width: 100%;
+    }
+    .col-9{
+        width: 100%;
+    }
+
+
+}
