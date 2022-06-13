@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+   
+
+
+
 
     <header data-aos="zoom-in-down" >
     <h1 style="font-size: 5ch;">Esteban Valentino</h1>
@@ -21,9 +25,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
               <a class="nav-link" href="../paginas/Premios.html">Premios</a>
-              <a class="nav-link" href="../paginas/Mi historia.html">Mi historia</a>
+              <a class="nav-link active" href="../paginas/Mi historia.html">Mi historia</a>
               <a class="nav-link" href="../paginas/Librografia.html">Librografia</a>
               <a class="nav-link" href="../paginas/Contacto.html">Contacto</a>
 
@@ -51,18 +55,28 @@
 
 <body background="../imagenes/fondoheader.png">
 
-    <subtitle class="box">DEJA TU COMENTARIO AQUI</subtitle>
-
-
-    <div class="comentarios">
-        <textarea placeholder="Escribe"></textarea>
+  <div class="container4">
+    <div class="col-md-5">
+        <div class="form-area">  
+            <form role="form">
+            <br style="clear:both">
+                        <h3 style="margin-bottom: 25px; text-align: center; color: white;">Deje su mensaje aqui</h3>
+                <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+              </div>
+                <div class="form-group">
+                        <textarea class="form-control" type="textarea" id="message" placeholder="Mensaje" maxlength="140" rows="7"></textarea>
+                            <span class="help-block"><p id="characterLeft" class="help-block "></p></span>                    
+                        </div>
+                
+              <button type="button" class="btn btn-primary pull-right">Enviar</button>
+            </form>
+        </div>
     </div>
-
-    <div class="enviar">
-        <input type="button" value="enviar">
     </div>
-
-
 
 
     <br>
@@ -70,13 +84,17 @@
     <hr>
 
     <footer>
-        Seguime en
+      <strong>Seguime en</strong>
 
-        <A href="https://www.instagram.com/">Instagram</A>
-        <A href="https://www.youtube.com/">Youtube</A>
-        <A href="https://www.facebook.com/">Facebook</A>
+      <A href="https://www.instagram.com/"><img src="https://img.icons8.com/fluency/48/undefined/instagram-new.png"/></A>
+      
+      <A href="https://www.youtube.com/"><img src="https://img.icons8.com/color/48/undefined/youtube--v1.png"/></A>
+      
+      <A href="https://www.facebook.com/"><img src="https://img.icons8.com/color/48/undefined/facebook-new.png"/></A>
 
-    </footer>
+  </footer>
+
+
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
