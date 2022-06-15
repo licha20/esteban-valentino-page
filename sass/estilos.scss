@@ -1,0 +1,241 @@
+
+$color_1: white;
+$border-color_1: beige;
+
+* {
+	margin: 15px;
+	padding: 0%;
+}
+a {
+	text-decoration: none;
+	color: $color_1;
+	display: inline-block;
+	border-color: $border-color_1;
+	border-radius: 50px;
+	margin: 8px;
+	border: 4px;
+}
+.col-3 {
+	width: 25%;
+}
+.col-9 {
+	width: 75%;
+}
+header {
+	display: grid;
+	background: url(/imagenes/fondoheader.png);
+	width: 100%;
+	font-size: 25px;
+	padding: 0.5em;
+	text-decoration: none;
+	justify-content: space-between;
+	ul {
+		display: inline-block;
+		list-style-type: none;
+		margin: auto;
+		text-align: center;
+	}
+}
+h1 {
+	color: $color_1;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+}
+.parte-media {
+	display: grid;
+	grid-template-columns: 0.2fr 1.2fr;
+	color: $color_1;
+	margin: 5%;
+	padding: 1%;
+}
+p {
+	color: $color_1;
+	line-height: 1.5em;
+	text-align: left;
+}
+.agenda {
+	display: flex;
+	justify-content: center;
+	color: $color_1;
+	text-align: center;
+}
+subtitle {
+	color: $color_1;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: x-large;
+}
+ul {
+	color: $color_1;
+	text-align: center;
+	li { color: white;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+}
+ 
+	footer {
+		color: $color_1;
+		text-align: center;
+	}
+	/* fin de index */
+	
+	/*premios*/
+	.titulopremios {
+		justify-content: center;
+		color: $color_1;
+		text-align: center;
+		display: flex;
+	}
+/* fin de premios */
+/* inicia librografia */
+.tbody {
+	color: $color_1;
+	display: inline-block;
+	justify-content: center;
+	padding: 10;
+}
+.titulo-librografia {
+	justify-content: center;
+	color: $color_1;
+	text-align: center;
+}
+.container2 {
+	text-align: center;
+}
+/* fin de librografia */
+/* inicio historia*/
+.historia {
+	color: $color_1;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+
+.flex-container {
+	box-sizing: border-box;
+	padding: 0%;
+	margin: 0%;
+	width: 0%;
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+.flex-container-flex-item {
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+.flex-item {
+	img {
+		width: 224px;
+		height: 224px;
+	}
+}
+.container {
+	width: 100%;
+	display: flex;
+}
+/* fin historia */
+/* inicio contacto */
+.display-mobile {
+	display: none;
+}
+
+/* contacto */
+.textarea {
+	padding: 20;
+	margin: 35px;
+}
+.titlebox {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.comentarios {
+	justify-content: center;
+	color: $color_1;
+	text-align: center;
+	display: flex;
+	textarea {
+		width: 583px;
+		height: 162px;
+	}
+}
+.subtitle-box {
+	justify-content: center;
+	display: flex;
+	text-align: center;
+}
+.enviar {
+	justify-content: center;
+	color: $color_1;
+	text-align: center;
+	display: flex;
+	box-sizing: border-box;
+	size: 10px 15px;
+}
+.container-fluid-navbar-nav {
+	display: grid;
+	padding: 00.5em;
+	gap: 20px;
+}
+.navbar-nav {
+	a {
+		gap: 2px;
+		display: grid;
+		padding: 00.5em;
+	}
+}
+.container4 {
+	display: grid;
+	justify-items: center;
+	text-align: center;
+}
+/* fin contacto*/
+/* desktop */
+@media (min-width: 576px) {
+	header {
+		grid-template-columns: 0.8fr 1.2fr;
+		gap: 100px;
+		nav { text-align: center;
+		display: flex;
+		padding: 0.2;
+		text-decoration: none;
+		align-items: center;
+	}
+}
+}
+
+/* maps */
+
+$red-social: (
+
+instagram: violet
+youtube: red 
+facebook: blue 
+
+);
+
+@each $nombre, $valor in $red-social {
+	.icon-#{$nombre} {
+		color: $valor;
+	
+}
+}
+
+@mixin bordes {
+	border: 4px solid $color_1;
+}
+	
+.a {
+@include bordes
+}
+	
+
+	
+
+
+	

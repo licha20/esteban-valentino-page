@@ -9,7 +9,6 @@ a {
   display: inline-block;
   border-color: beige;
   border-radius: 50px;
-  border: 4px;
   margin: 8px;
 }
 
@@ -297,22 +296,6 @@ footer {
   }
 }
 
-  /* maps*/
 
-  .icon-instagram {
-    color:violet;
-  }
-
-  .icon-youtube { 
-    color:red;
-  }
-
-.icon-facebook {
-  color:blue
-}
-
-.a {
-border: 4px solid white;
-}
 
 /*# sourceMappingURL=estilos.css.map */
