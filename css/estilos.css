@@ -348,6 +348,10 @@ margin-top: auto;
     text-align: center;
   }
 
+  h1 {
+    font-size: 4ch;
+    margin-left: -22;
+  }
   #licha{
     grid-template-columns: 1fr;
     justify-items: center;
@@ -356,8 +360,18 @@ margin-top: auto;
   footer{
     display: flex;
   }
-  
+  #carouselExampleControls {
+
+    display: none;
+
+  }
 }
+
+
+ 
+
+
+
 
 /*# sourceMappingURL=estilos.css.map */
 
